@@ -42,7 +42,7 @@ class _startingPageState extends State<startingPage> {
           Container(
             margin: EdgeInsets.only(
               left: 20,
-              right: 20
+              right: 20,
             ),
             height: 160,
             width: double.infinity,
@@ -60,14 +60,21 @@ class _startingPageState extends State<startingPage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(
-                    height: 9,
+                    height: 24,
                   ),
                   Text('Its a good day to start investing               ',
                   style: TextStyle(fontSize: 15),
                   ),
+                  SizedBox(
+                    height: 13,
+                  ),
 
                   Text('Make your first investment                ',
                   style: TextStyle(fontSize: 17),
+                  ),
+
+                   SizedBox(
+                    height: 13,
                   ),
 
                   Row(
@@ -90,10 +97,33 @@ class _startingPageState extends State<startingPage> {
                         ),
                     ],
                   ),
+
+                  
+                  
                 ],
               ),
             ),
-          )
+          ),
+
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+                    
+                    child: Image(image: AssetImage(
+                      '/Users/akhilpdominic/Downloads/Vector.png'
+                    ),),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+
+           Container(
+                    
+                    child: Image(image: AssetImage(
+                      '/Users/akhilpdominic/Downloads/Vector-3.png'
+                    ),),
+                  )
         ],
       )
       ),
