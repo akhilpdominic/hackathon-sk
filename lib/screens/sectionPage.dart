@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 class section extends StatefulWidget {
   const section({ Key? key }) : super(key: key);
 
+  
+
   @override
   State<section> createState() => _sectionState();
 }
@@ -16,10 +18,32 @@ class _sectionState extends State<section> {
       Column(
         children: [
           SizedBox(
-            height: 25,
+            height: 55,
           ),
 
-          Text('Explore and Invest',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),)
+          Text('Explore and Invest                          ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+          SizedBox(
+            height: 35,
+          ),
+          
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 20,
+              right: 20
+
+            ),
+            child: Container(
+              
+              child:TextField(decoration: 
+              InputDecoration(hintText: "startup,ideas",
+              border: OutlineInputBorder()),)
+            ),
+          ),
+SizedBox(
+            height: 35,
+          ),
+
+          Image(image: AssetImage('assets/images/Vectorsss.png'),)
         ],
       )
       ),
