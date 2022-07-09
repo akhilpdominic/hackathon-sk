@@ -111,7 +111,7 @@ class _startingPageState extends State<startingPage> {
           Container(
                     
                     child: Image(image: AssetImage(
-                      '/Users/akhilpdominic/Downloads/Vector.png'
+                      'assets/Vector.png'
                     ),),
           ),
           SizedBox(
@@ -121,7 +121,7 @@ class _startingPageState extends State<startingPage> {
            Container(
                     
                     child: Image(image: AssetImage(
-                      '/Users/akhilpdominic/Downloads/Vector-3.png'
+                      'assets/Vector-3.png'
                     ),),
                   )
         ],

@@ -19,7 +19,7 @@ class _sectionState extends State<section> {
             height: 25,
           ),
 
-          Text('Explore and Invest',style: TextStyle(fontWeight: FontWeight.bold),)
+          Text('Explore and Invest',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),)
         ],
       )
       ),
