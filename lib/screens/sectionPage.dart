@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/LastScreen.dart';
 import 'package:flutter_application_1/screens/startupList.dart';
 
 class section extends StatefulWidget {
@@ -71,7 +72,20 @@ class _sectionState extends State<section> {
             SizedBox(
               height: 25,
             ),
-            Image(image: AssetImage('assets/images/Vector-6.png')),
+            OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 17, vertical: 4),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20))),
+              child: Image(image: AssetImage('assets/images/Vector-6.png')),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const last()),
+                );
+              },
+            ),
           ],
         ),
       )),

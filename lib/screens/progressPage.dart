@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_application_1/screens/startingPage.dart';
 import 'package:timelines/timelines.dart';
 
 class progress extends StatefulWidget {
@@ -34,7 +35,7 @@ class _progressState extends State<progress> {
               height: 50,
             ),
             //Image(image: AssetImage('assets/images/Vector22.png'))*/
-            FixedTimeline.tileBuilder(
+            /*FixedTimeline.tileBuilder(
               builder: TimelineTileBuilder.connectedFromStyle(
                 contentsAlign: ContentsAlign.basic,
                 contentsBuilder: (context, index) => Card(
@@ -49,7 +50,31 @@ class _progressState extends State<progress> {
                 indicatorStyleBuilder: (context, index) => IndicatorStyle.dot,
                 itemCount: 5,
               ),
-            )
+            ),*/
+
+            Image(image: AssetImage('assets/images/Vector22.png')),
+
+            SizedBox(
+              height: 300,
+            ),
+            OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  primary: Colors.black,
+                  backgroundColor: Colors.black45,
+                  minimumSize: Size(300, 55),
+                  textStyle: const TextStyle(fontSize: 20, color: Colors.black),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const startingPage()),
+                  );
+                },
+                child: Text(
+                  "Register",
+                  style: TextStyle(color: Colors.white),
+                )),
           ],
         ),
       )),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/LastScreen.dart';
 import 'package:flutter_application_1/screens/homeScreen.dart';
 import 'package:flutter_application_1/screens/licious.dart';
 import 'package:flutter_application_1/screens/liciousBidding.dart';

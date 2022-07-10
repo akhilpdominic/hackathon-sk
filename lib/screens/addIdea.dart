@@ -33,7 +33,7 @@ class _ideaState extends State<idea> {
               margin: const EdgeInsets.only(right: 10, left: 10),
               child: new TextField(
                 decoration: new InputDecoration(
-                  hintText: 'Abstract',
+                  hintText: 'One line abstract',
                 ),
               )),
           SizedBox(
@@ -54,6 +54,16 @@ class _ideaState extends State<idea> {
               child: new TextField(
                 decoration: new InputDecoration(
                   hintText: 'Idea Name',
+                ),
+              )),
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+              margin: const EdgeInsets.only(right: 10, left: 10),
+              child: new TextField(
+                decoration: new InputDecoration(
+                  hintText: 'Tag line',
                 ),
               )),
           SizedBox(
