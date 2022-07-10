@@ -16,12 +16,12 @@ class _homeScreen extends State<homeScreen> {
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          color: Colors.blue[100],
+          color: Colors.white,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: 150,
+                height: 350,
               ),
               Container(
                 margin: EdgeInsets.only(top: 100),
@@ -35,7 +35,7 @@ class _homeScreen extends State<homeScreen> {
                     ),
                     onPressed: null,
                     child: Text(
-                      "Login",
+                      "Register",
                       style: TextStyle(color: Colors.white),
                     )),
               ),
@@ -57,7 +57,7 @@ class _homeScreen extends State<homeScreen> {
                       );
                     },
                     child: Text(
-                      "Register",
+                      "Login",
                       style: TextStyle(color: Colors.white),
                     )),
               ),
